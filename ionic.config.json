@@ -1,0 +1,7 @@
+{
+  "name": "project-labAM",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

@@ -1,0 +1,49 @@
+<ion-header>
+  <ion-toolbar>
+    <div style="background:#219b1c; ">
+      <ion-title style="text-align: center;">
+        <img src="../../assets/logo/logo home.png" width="50%"/>
+      </ion-title>
+    </div>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" color="light">
+
+    <ion-slides scrollbar="true">
+
+      <ion-slide *ngFor="let image of images">
+        <img src={{image.image}} />
+      </ion-slide>
+
+    </ion-slides>
+
+
+    <ion-button 
+      expand="full" fill="clear" color="light" 
+      style="margin-top: 5%; height: 15%; background:#219b1c;"
+      (click)="go_selectProduct()"
+    >
+
+      Productos
+    </ion-button>
+
+    <ion-button expand="full" fill="clear" color="light" style="margin-bottom: 5%; height: 15%; background:#219b1c;">
+      Comunidad
+    </ion-button>
+
+
+    <ion-card style="margin-bottom: 10%;">
+      <ion-card-header>
+        <ion-card-title style="text-align: center;"> <img src="../../assets/icon/us.png" width="20%" /> </ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        Somos una empresa 100% mexicana y regiomontana dedicada a la produccion de frutas y vegetales de máxima calidad.
+        A lo largo de los años, nuestra misión ha sido llevar a los consumidores un producto de confianza, cumpliendo
+        con los más altos estandares en los procesos de producción para que, el consumidor final, tenga la saguridad de
+        contar con un producto de calidad.
+      </ion-card-content>
+    </ion-card>
+
+
+</ion-content>

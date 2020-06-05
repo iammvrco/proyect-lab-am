@@ -15,6 +15,20 @@ const routes: Routes = [
     path: 'select-product',
     loadChildren: () => import('./select-product/select-product.module').then( m => m.SelectProductPageModule)
   },
+  {
+    path: 'mapa',
+    loadChildren: () => import('./mapa/mapa.module').then( m => m.MapaPageModule)
+  },
+  {
+    path: 'productos/:categoria',
+    loadChildren: () => import('./productos/productos.module').then( m => m.ProductosPageModule)
+  },
+  {
+    path: 'producto/:categoria/:id',
+    loadChildren: () => import('./producto/producto.module').then( m => m.ProductoPageModule)
+  },
+
+
 ];
 
 @NgModule({

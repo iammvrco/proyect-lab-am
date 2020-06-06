@@ -31,9 +31,10 @@ const routes: Routes = [
     path: 'conocenos/:sembradio',
     loadChildren: () => import('./conocenos/conocenos.module').then( m => m.ConocenosPageModule)
   },
-
-
-
+  {
+    path: 'recuerdos',
+    loadChildren: () => import('./recuerdos/recuerdos.module').then( m => m.RecuerdosPageModule)
+  },
 ];
 
 @NgModule({

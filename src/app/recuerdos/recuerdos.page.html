@@ -1,0 +1,11 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>recuerdos</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-button (click)="hacerFoto()">Hacer foto</ion-button>
+  <img [src]="foto" *ngIf="foto" />
+</ion-content>
+ 

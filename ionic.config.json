@@ -1,7 +1,8 @@
 {
   "name": "project-labAM",
   "integrations": {
-    "capacitor": {}
+    "capacitor": {},
+    "cordova": {}
   },
   "type": "angular"
 }

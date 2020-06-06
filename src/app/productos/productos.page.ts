@@ -9,6 +9,7 @@ import { ActivatedRoute } from '@angular/router';
 export class ProductosPage implements OnInit {
 
   categoria;
+  sembradio;
   opciones;
   frutas=[
     {
@@ -24,7 +25,6 @@ export class ProductosPage implements OnInit {
       nombre:"Naranja"
     }
   ];
-
   verduras=[
     {
       id:0,
@@ -38,13 +38,20 @@ export class ProductosPage implements OnInit {
       id:2,
       nombre:"Maíz"
     }
-  ]
+  ];
 
   constructor(private activatedRoute:ActivatedRoute) { }
 
   ngOnInit() {
     this.categoria=this.activatedRoute.snapshot.paramMap.get('categoria');
-    this.opciones=(this.categoria==="frutas")? this.frutas : this.verduras;
+    if(this.categoria==="frutas")
+    {
+      this.opciones=this.frutas;
+      this.sembradio="Los Morales";
+    }
+    else{
+      this.opciones=this.verduras;
+      this.sembradio="Zambrano";
+    }
   }
-
 }

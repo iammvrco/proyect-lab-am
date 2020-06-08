@@ -11,6 +11,7 @@ export class ProductosPage implements OnInit {
   categoria;
   sembradio;
   opciones;
+  logo;
   frutas=[
     {
       id:0,
@@ -48,10 +49,12 @@ export class ProductosPage implements OnInit {
     {
       this.opciones=this.frutas;
       this.sembradio="Los Morales";
+      this.logo="./assets/logo/los-morales.png";
     }
     else{
       this.opciones=this.verduras;
       this.sembradio="Zambrano";
+      this.logo="./assets/logo/los-zambrano.png";
     }
   }
 }

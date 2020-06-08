@@ -1,3 +1,7 @@
+.backcolor{
+    --background:#219b1c;
+    color:white;
+}
 ion-content{
     height: 100%;
     width: 100%;
@@ -6,7 +10,20 @@ ion-slides{
     height: 50%;
     width: 100%;
 }
+ion-slides{
+    --bullet-background-active:#219b1c;
+    --bullet-background:white;
+}
 ion-slides img{
     object-fit: cover;
     height: 100%;
+}
+ion-button{
+    margin:5%
+}
+p{
+    margin:5%;
+    font-size: 20px;
+    color: #8c8c8c;
+    text-align: justify;
 }

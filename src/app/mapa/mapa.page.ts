@@ -12,14 +12,22 @@ export class MapaPage implements OnInit {
 
   constructor() { }
 
+  mapa;
+
   ngOnInit(){
     mapboxgl.accessToken = environment.mapboxkey;
-    var mapa = new mapboxgl.Map({
+    this.mapa= new mapboxgl.Map({
     container: 'mapabox', // container id
     style: 'mapbox://styles/mapbox/streets-v11',
     center: [-100.117, 25.4167], // starting position
     zoom: 12 // starting zoom
     });
+    this.mapa.addControl(new mapboxgl.GeolocateControl({
+      positionOptions: {
+        enableHighAccuracy: true
+      },
+      trackUserLocation: true
+    }));
   }
 
 }

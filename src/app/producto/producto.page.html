@@ -1,5 +1,5 @@
 <ion-header>
-  <ion-toolbar>
+  <ion-toolbar class="backcolor">
     <ion-buttons slot="start">
       <ion-back-button></ion-back-button>
     </ion-buttons>
@@ -13,4 +13,9 @@
       <img src={{imagen}} />
     </ion-slide>
   </ion-slides>
+  <ion-button class="backcolor" expand="block" (click)="audioPlay()">
+    <ion-icon *ngIf="b==1" name="pause-outline"></ion-icon>
+    <ion-icon *ngIf="b==0" name="play-outline"></ion-icon>
+  </ion-button>
+  <p>{{producto.descripcion}}</p>
 </ion-content>

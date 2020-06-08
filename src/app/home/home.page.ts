@@ -9,12 +9,6 @@ import { Router } from '@angular/router';
 export class HomePage {
 
   constructor( private router : Router ) {}
-  
-  go_selectProduct() {
-    
-    this.router.navigate( ['/select-product'] );
-
-  }
 
   images = [
     {

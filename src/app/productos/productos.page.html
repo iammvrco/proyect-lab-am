@@ -1,17 +1,14 @@
 <ion-header>
-  <ion-toolbar>
+  <ion-toolbar class="backcolor">
     <ion-buttons slot="start">
       <ion-back-button></ion-back-button>
     </ion-buttons>
-    <ion-title> Sembradío {{sembradio}}</ion-title>
+    <ion-title> <img src={{logo}}/> </ion-title>
+    <ion-button fill="clear" color="light" expand="full" [routerLink]="['/conocenos',sembradio]">Conocenos</ion-button>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-
-
-  <ion-button expand="block" [routerLink]="['/conocenos',sembradio]">Conocenos</ion-button>
-
   <ion-list>
     <ion-item *ngFor="let opcion of opciones" [routerLink]="['/producto',categoria,opcion.id]">
       {{opcion.nombre}}

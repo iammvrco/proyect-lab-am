@@ -1,11 +1,14 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>recuerdos</ion-title>
+  <ion-toolbar class="backcolor">
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Capturar experiencia</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-  <ion-button (click)="hacerFoto()">Hacer foto</ion-button>
+  <ion-button class="backcolor" expand="block" (click)="hacerFoto()">Tomar foto</ion-button>
   <img [src]="foto" *ngIf="foto" />
 </ion-content>
  

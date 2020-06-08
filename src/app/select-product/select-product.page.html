@@ -1,27 +1,23 @@
 <ion-header>
-  <ion-toolbar>
-    <div style="background:#219b1c; ">
-
-      <ion-buttons slot="start">
-        <ion-back-button ></ion-back-button>
-      </ion-buttons>
-      
-    </div>
+  <ion-toolbar class="backcolor">
+    <ion-buttons slot="start">
+      <ion-back-button ></ion-back-button>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
-<ion-content scroll-y="false">
+<ion-content scroll-y="false" color="light">
 
-  <ion-grid style="height: 100%;">
+  <ion-grid >
 
-      <ion-row class="ion-align-items-center" style="height: 49.5%; background-image: url(../../assets/images-menu/fruits-e.jpg); background-size: cover;">
-        <ion-button fill="clear" color="light" style="width: 100%; height: 30%; background:#219b1c;" [routerLink]="['/productos', 'frutas']">Frutas</ion-button>
+      <ion-row class="ion-align-items-center frutas" >
+        <ion-button fill="clear" color="light"[routerLink]="['/productos', 'frutas']">Frutas</ion-button>
       </ion-row>
 
       <ion-row style="height: 1%;"></ion-row>
 
-      <ion-row class="ion-align-items-center" style="height: 49.5%; background-image: url(../../assets/images-menu/vegetables-e.jpg); background-size: cover;">
-        <ion-button fill="clear" color="light" style="width: 100%; height: 30%; background:#219b1c;" [routerLink]="['/productos', 'verduras']">Verduras</ion-button>
+      <ion-row class="ion-align-items-center verduras" >
+        <ion-button fill="clear" color="light" [routerLink]="['/productos', 'verduras']">Verduras</ion-button>
       </ion-row>
 
   </ion-grid>

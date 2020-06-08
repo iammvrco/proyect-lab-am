@@ -1,10 +1,8 @@
 <ion-header>
-  <ion-toolbar>
-    <div style="background:#219b1c; ">
-      <ion-title style="text-align: center;">
-        <img src="../../assets/logo/logo home.png" width="50%"/>
-      </ion-title>
-    </div>
+  <ion-toolbar class="backcolor">
+    <ion-title style="text-align: center;">
+      <img src="../../assets/logo/logo.png" width="50%"/>
+    </ion-title>
   </ion-toolbar>
 </ion-header>
 
@@ -19,21 +17,16 @@
     </ion-slides>
 
 
-    <ion-button 
-      expand="full" fill="clear" color="light" 
-      style="margin-top: 5%; height: 15%; background:#219b1c;"
-      (click)="go_selectProduct()"
-    >
-
+    <ion-button expand="full" fill="clear" color="light" [routerLink]="['/select-product']">
       Productos
     </ion-button>
 
-    <ion-button expand="full" fill="clear" color="light" style="margin-bottom: 5%; height: 15%; background:#219b1c;">
-      Comunidad
+    <ion-button expand="full" fill="clear" color="light" [routerLink]="['/recuerdos']">
+      Capturar experiencia
     </ion-button>
 
 
-    <ion-card style="margin-bottom: 10%;">
+    <ion-card>
       <ion-card-header>
         <ion-card-title style="text-align: center;"> <img src="../../assets/icon/us.png" width="20%" /> </ion-card-title>
       </ion-card-header>

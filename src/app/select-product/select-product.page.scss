@@ -1,0 +1,22 @@
+.backcolor{
+    --background:#219b1c;
+    color:white;
+}
+ion-grid{
+    height: 100%;
+}
+ion-row{
+    height: 49.5%; 
+    background-size: cover;
+}
+.frutas{
+    background-image: url(../../assets/images-menu/fruits-e.jpg); 
+}
+.verduras{
+    background-image: url(../../assets/images-menu/vegetables-e.jpg); 
+}
+ion-button{
+    width: 100%; 
+    height: 20%; 
+    background:#219b1c;
+}

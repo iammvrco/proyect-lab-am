@@ -53,6 +53,10 @@ export class ProductosPage implements OnInit {
     }
   ];
 
+  options={
+    loop:true
+  }
+
   constructor(private activatedRoute:ActivatedRoute) { }
 
   ngOnInit() {

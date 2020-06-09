@@ -2,17 +2,64 @@
   --background:#219b1c;
   color:white;
 }
-ion-slides{
-  margin-bottom: 3%;
+.lugar{
+  margin-bottom: 5%;
 }
-ion-button{
-  height: 15%; 
-  background:#219b1c;
+ion-slides{
+  --bullet-background-active:#219b1c;
+  --bullet-background:white;
+}
+.audio{
+  margin: 2%;
 }
 ion-card{
-  margin-top:3%;
-  margin-bottom:10%;
+  margin: 2%;
+  margin-bottom: 5%;
+  text-align: justify;
 }
-.proceso{
+.opciones{
+  margin: 2%;
+  height: 15%;
+}
+h1{
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  width: 100%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background: #219b1c;
+}
+.procesos{
+  height: 50%;
+}
+.cont{
+  position: relative;
   height: 100%;
+  background: black;
+}
+.cont img{
+  object-fit: cover;
+  height: 100%;
+  opacity: 0.6;
+}
+.titulo{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+}
+.titulo p{
+  color: white;
+  font-size: 20px;
+  text-align: center;
+}
+ion-col{
+  background: #219b1c;
+}
+ion-grid p{
+  font-size: 14px;
+  color: white;
+  text-align: center;
 }

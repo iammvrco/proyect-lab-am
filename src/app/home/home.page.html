@@ -8,41 +8,56 @@
 
 <ion-content [fullscreen]="true" color="light">
 
-    <ion-slides scrollbar="true">
+    <ion-slides class="lugar" [options]="options" pager="true">
 
-      <ion-slide *ngFor="let image of images">
-        <img src={{image.image}} />
+      <ion-slide *ngFor="let imagen of lugar">
+        <img src={{imagen}} />
       </ion-slide>
 
     </ion-slides>
 
-
-    <ion-button expand="full" fill="clear" color="light" [routerLink]="['/select-product']">
-      Productos
+    <ion-button class="backcolor audio" expand="block" (click)="audioPlay()">
+      <ion-icon *ngIf="b==1" name="pause-outline"></ion-icon>
+      <ion-icon *ngIf="b==0" name="play-outline"></ion-icon>
     </ion-button>
-
-    <ion-button expand="full" fill="clear" color="light" [routerLink]="['/recuerdos']">
-      Capturar experiencia
-    </ion-button>
-
 
     <ion-card>
-      <ion-card-header>
-        <ion-card-title style="text-align: center;"> <img src="../../assets/icon/us.png" width="20%" /> </ion-card-title>
-      </ion-card-header>
       <ion-card-content>
-        Soy un pequeño agricultor con muchos años de experiencia dedicado a brindar a mis clientes los productos de la mejor calidad en el mercado utilizando técnicas de cultivo avanzadas, tengo unas zonas de cultivo abiertas al público para que las puedan observar de primera mano  y comprobar su calidad.
+        Pues esta es mi granjita no tengo muchas frutas y verduras pero todo de buenísima calidad, tratadas siempre con mucho cariño, poniéndoles su tierrita pa’ que agarren muchas vitaminas, echandoles agua cuando la necesitan, pero no me crean a mí, vengansen aquí conmigo para verlos con sus propios ojos.<br>
+        Contamos con dos sembradíos, Los Morales para puras frutas y Los Zambrano para puras verduras, para repartirnos el trabajo y hacerlo
+        mejor. Somos una familia muy dedicada, y esto está reflejado en la calidad de nuestras cosechas.
       </ion-card-content>
     </ion-card>
 
-    <ion-slides scrollbar="true">
+    <ion-button class="backcolor opciones" expand="block" [routerLink]="['/select-product']">
+      Productos
+    </ion-button>
 
-      <ion-slide *ngFor="let descripcion of descripciones">
-        <ion-card class="proceso">
-          <ion-card-content>{{descripcion}}</ion-card-content>
-        </ion-card>
+    <ion-button class="backcolor opciones" expand="block" [routerLink]="['/recuerdos']">
+      Capturar experiencia
+    </ion-button>
+
+    <h1>Conoce nuestro proceso</h1>
+
+    <ion-slides class="procesos" [options]="options" pager="true">
+
+      <ion-slide *ngFor="let proceso of procesos">
+        <div class="cont">
+          <img src={{proceso.imagen}} />
+          <div class="titulo">
+            <p>{{proceso.nombre}}</p>
+          </div>
+        </div>
       </ion-slide>
 
     </ion-slides>
+
+    <h1>Conocenos</h1>
+    <ion-grid>
+      <ion-row>
+        <ion-col [routerLink]="['/conocenos','Los Morales']"><img src="../../assets/logo/los-morales.png"/><p>Sembradio de frutas</p></ion-col>
+        <ion-col [routerLink]="['/conocenos','Los Zambrano']"><img src="../../assets/logo/los-zambrano.png"/><p>Sembradio de verduras</p></ion-col>
+      </ion-row>
+    </ion-grid>
 
 </ion-content>

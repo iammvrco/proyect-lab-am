@@ -6,18 +6,16 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content scroll-y="false" color="light">
+<ion-content color="light">
 
   <ion-grid >
 
       <ion-row class="ion-align-items-center frutas" >
-        <ion-button fill="clear" color="light"[routerLink]="['/productos', 'frutas']">Frutas</ion-button>
+        <ion-button class="backcolor" expand="block" [routerLink]="['/productos', 'frutas']">Frutas</ion-button>
       </ion-row>
 
-      <ion-row style="height: 1%;"></ion-row>
-
       <ion-row class="ion-align-items-center verduras" >
-        <ion-button fill="clear" color="light" [routerLink]="['/productos', 'verduras']">Verduras</ion-button>
+        <ion-button class="backcolor" expand="block" [routerLink]="['/productos', 'verduras']">Verduras</ion-button>
       </ion-row>
 
   </ion-grid>

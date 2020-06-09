@@ -9,7 +9,7 @@
 </ion-header>
 
 <ion-content>
-  <ion-slides>
+  <ion-slides [options]="options" pager="true">
     <ion-slide *ngFor="let opcion of opciones">
       <div class="cont">
         <img src={{opcion.imagen}} />

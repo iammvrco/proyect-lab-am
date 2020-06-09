@@ -21,6 +21,8 @@ ion-header button{
 ion-slides{
     height: 100%;
     width: 100%;
+    --bullet-background-active:#219b1c;
+    --bullet-background:white;
 }
 ion-slide{
     display:block;
@@ -49,12 +51,12 @@ ion-slide{
     top: 80%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background: white;
+    background:#219b1c;
     width: 90%;
     border-radius: 10px;
 }
 .text p{
-    color: gray;
+    color: white;
     font-size: 16px;
     text-align: justify;
     margin: 5%;

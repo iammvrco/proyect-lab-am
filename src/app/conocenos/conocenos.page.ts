@@ -40,7 +40,8 @@ export class ConocenosPage implements OnInit {
       positionOptions: {
         enableHighAccuracy: true
       },
-      trackUserLocation: true
+      trackUserLocation: true,
+      showUserLocation:true
     }));
   }
 }

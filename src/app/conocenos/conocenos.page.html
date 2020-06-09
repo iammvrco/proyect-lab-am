@@ -1,13 +1,16 @@
 <ion-header>
-  <ion-toolbar>
+  <ion-toolbar class="backcolor">
     <ion-buttons slot="start">
       <ion-back-button></ion-back-button>
     </ion-buttons>
-    <ion-title>{{informacion.nombre}}</ion-title>
+    <ion-title> <img src={{logo}}/> </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content >
-  {{informacion.descripcion}}
+<ion-content>
+  <p>{{informacion.descripcion}}</p>
   <div id="mapabox"></div>
+  <p>{{informacion.dirr}}</p>
+  <p>Telefono: {{informacion.tel}}</p>
+  <p>Correo: {{informacion.correo}}</p>
 </ion-content>

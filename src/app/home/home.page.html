@@ -31,12 +31,18 @@
         <ion-card-title style="text-align: center;"> <img src="../../assets/icon/us.png" width="20%" /> </ion-card-title>
       </ion-card-header>
       <ion-card-content>
-        Somos una empresa 100% mexicana y regiomontana dedicada a la produccion de frutas y vegetales de máxima calidad.
-        A lo largo de los años, nuestra misión ha sido llevar a los consumidores un producto de confianza, cumpliendo
-        con los más altos estandares en los procesos de producción para que, el consumidor final, tenga la saguridad de
-        contar con un producto de calidad.
+        Soy un pequeño agricultor con muchos años de experiencia dedicado a brindar a mis clientes los productos de la mejor calidad en el mercado utilizando técnicas de cultivo avanzadas, tengo unas zonas de cultivo abiertas al público para que las puedan observar de primera mano  y comprobar su calidad.
       </ion-card-content>
     </ion-card>
 
+    <ion-slides scrollbar="true">
+
+      <ion-slide *ngFor="let descripcion of descripciones">
+        <ion-card class="proceso">
+          <ion-card-content>{{descripcion}}</ion-card-content>
+        </ion-card>
+      </ion-slide>
+
+    </ion-slides>
 
 </ion-content>

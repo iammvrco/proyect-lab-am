@@ -1,4 +1,23 @@
+.backcolor{
+    --background:#219b1c;
+    color:white;
+}
+ion-buttons{
+    position: fixed;
+}
+ion-title{
+    text-align: center;
+}
+ion-title img{
+    width: 50%;
+}
+p{
+    margin:5%;
+    font-size: 20px;
+    color: #8c8c8c;
+    text-align: left;
+}
 #mapabox{
     width: 100%;
-    height: 50%;
+    height: 44%;
 }

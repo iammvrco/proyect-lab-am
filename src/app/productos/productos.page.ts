@@ -15,29 +15,41 @@ export class ProductosPage implements OnInit {
   frutas=[
     {
       id:0,
-      nombre:"Sandía"
+      nombre:"Sandía",
+      imagen:"./assets/frutas/sandia/sandia2.jpg",
+      descripcion:"No solo vea la sandía, venga a pegarle pa' que se de cuenta de la calidad."
     },
     {
       id:1,
       nombre:"Melón",
+      imagen:"./assets/frutas/melon/melon2.jpg",
+      descripcion:"Lo que sabemos hacer aquí es cuidar bien a nuestros melones, echele un ojo."
     },
     {
       id:2,
-      nombre:"Naranja"
+      nombre:"Naranja",
+      imagen:"./assets/frutas/naranja/naranja2.jpg",
+      descripcion:"¿Cuáles naranjas de Montemorelos? Más bien naranjas de los Morales Zambrano."
     }
   ];
   verduras=[
     {
       id:0,
-      nombre:"Frijol"
+      nombre:"Frijol",
+      imagen:"./assets/verduras/frijol/frijol2.jpg",
+      descripcion:"Frijolitos frescos, recolectados todos los días para comer en ese ratito."
     },
     {
       id:1,
       nombre:"Papa",
+      imagen:"./assets/verduras/papa/papa2.jpg",
+      descripcion:"La papa está bien buena, agarre la que quiera. Calidad garantizadada.."
     },
     {
       id:2,
-      nombre:"Maíz"
+      nombre:"Maíz",
+      imagen:"./assets/verduras/maiz/maiz2.jpg",
+      descripcion:"Arranque una mazorca y metala a la braza pa' un elote asadito, bien fresco."
     }
   ];
 

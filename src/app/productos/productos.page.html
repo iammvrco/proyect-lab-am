@@ -1,18 +1,26 @@
-<ion-header>
+<ion-header class="ion-no-border">
   <ion-toolbar class="backcolor">
     <ion-buttons slot="start">
       <ion-back-button></ion-back-button>
     </ion-buttons>
     <ion-title> <img src={{logo}}/> </ion-title>
-    <ion-button fill="clear" color="light" expand="full" [routerLink]="['/conocenos',sembradio]">Conocenos</ion-button>
   </ion-toolbar>
+  <button [routerLink]="['/conocenos',sembradio]">Conocenos</button>
 </ion-header>
 
 <ion-content>
-  <ion-list>
-    <ion-item *ngFor="let opcion of opciones" [routerLink]="['/producto',categoria,opcion.id]">
-      {{opcion.nombre}}
-    </ion-item>
-  </ion-list>
+  <ion-slides>
+    <ion-slide *ngFor="let opcion of opciones">
+      <div class="cont">
+        <img src={{opcion.imagen}} />
+        <div class="titulo" [routerLink]="['/producto',categoria,opcion.id]">
+          <p>{{opcion.nombre}}</p>
+        </div>
+        <div class="text" [routerLink]="['/producto',categoria,opcion.id]">
+          <p>{{opcion.descripcion}}</p>
+        </div>
+      </div>
+    </ion-slide>
+  </ion-slides>
 </ion-content>
    

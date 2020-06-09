@@ -18,4 +18,12 @@
     <ion-icon *ngIf="b==0" name="play-outline"></ion-icon>
   </ion-button>
   <p>{{producto.descripcion}}</p>
+  <ion-list lines="none">
+    <p>Nutrientes en 100 gramos: </p>
+    <ion-item *ngFor="let nutriente of producto.nutrientes">{{nutriente}}</ion-item>
+    <p>Vitaminas: </p>
+    <ion-item *ngFor="let vitamina of producto.vitaminas">{{vitamina}}</ion-item>
+    <p>Minerales: </p>
+    <ion-item *ngFor="let mineral of producto.minerales">{{mineral}}</ion-item>
+  </ion-list>
 </ion-content>

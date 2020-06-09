@@ -17,7 +17,21 @@ export class ProductoPage implements OnInit {
         "./assets/frutas/sandia/sandia4.jpg"
       ],
       audio: "./assets/frutas/sandia/sandia.mp4",
-      descripcion: "Aquí en la granja, cultivamos las mejores sandías, bien jugosas y bien dulces, si no me cree nomás escuche. Así se escucha cuando la sandía está en su punto, lista para comerse."
+      descripcion: "Aquí en la granja, cultivamos las mejores sandías, bien jugosas y bien dulces, si no me cree nomás escuche. Así se escucha cuando la sandía está en su punto, lista para comerse.",
+      nutrientes:[
+        "46 cal",
+        "Proteína: 7%",
+        "Grasa: 4%",
+        "Carbohidratos: 86%",
+      ],
+      vitaminas:["A","b6","C"],
+      minerales:[
+        "Potasio",
+        "Sodio",
+        "Magnesio",
+        "Ácido fólico",
+        "Cobre"
+      ]
     },
     {
       nombre: "Melón",
@@ -28,7 +42,20 @@ export class ProductoPage implements OnInit {
         "./assets/frutas/melon/melon4.jpg"
       ],
       audio: "./assets/frutas/melon/melon.mp4",
-      descripcion: "Los melones que te cultivo aquí están bien sabrosos, apenas lo muerde uno y se les escurre todo el jugo, además de que están bien dulces, perfectos para hacer agua de melón."
+      descripcion: "Los melones que te cultivo aquí están bien sabrosos, apenas lo muerde uno y se les escurre todo el jugo, además de que están bien dulces, perfectos para hacer agua de melón.",
+      nutrientes:[
+        "53 cal",
+        "Proteína: 9%",
+        "Grasa: 5%",
+        "Carbohidratos: 86%",
+      ],
+      vitaminas:["C","A"],
+      minerales:[
+        "Hierro",
+        "Magnesio",
+        "Fósforo",
+        "Calcio"
+      ]
     },
     {
       nombre: "Naranja",
@@ -39,7 +66,20 @@ export class ProductoPage implements OnInit {
         "./assets/frutas/naranja/naranja4.jpg"
       ],
       audio: "./assets/frutas/naranja/naranja.mp4",
-      descripcion: "Las naranjas que tenemos son muy refrescantes, perfectas para ahorita que hace calor, tanto como en jugo de naranja como comiéndoselas así en gajos."
+      descripcion: "Las naranjas que tenemos son muy refrescantes, perfectas para ahorita que hace calor, tanto como en jugo de naranja como comiéndoselas así en gajos.",
+      nutrientes:[
+        "86 cal",
+        "Proteína: 4%",
+        "Grasa: 1%",
+        "Carbohidratos: 95%",
+      ],
+      vitaminas:["C","A","B"],
+      minerales:[
+        "Potasio",
+        "Calcio",
+        "Magnesio",
+        "Hierro"
+      ]
     }
   ];
   verduras=[
@@ -52,7 +92,20 @@ export class ProductoPage implements OnInit {
         "./assets/verduras/frijol/frijol4.jpg"
       ],
       audio: "./assets/verduras/frijol/frijol.mp4",
-      descripcion: "Los frijolitos, siempre necesarios en toda buena comida, por eso quí en mi granja cultivo unos frijoles bien sabrosos pa’ meterlos directito en la olla."
+      descripcion: "Los frijolitos, siempre necesarios en toda buena comida, por eso quí en mi granja cultivo unos frijoles bien sabrosos pa’ meterlos directito en la olla.",
+      nutrientes:[
+        "71 cal",
+        "Proteína: 4.07g",
+        "Grasa: 0.29g",
+        "Carbohidratos: 13.3g",
+        "Fibra: 3.6g"
+      ],
+      vitaminas:["C","A","B-9"],
+      minerales:[
+        "Potasio",
+        "Sodio",
+        "Fósforo"
+      ]
     },
     {
       nombre: "Papa",
@@ -63,7 +116,20 @@ export class ProductoPage implements OnInit {
         "./assets/verduras/papa/papa4.jpg"
       ],
       audio: "./assets/verduras/papa/papa.mp4",
-      descripcion: "La papa que cultivamos aquí es muy nutritiva y también es buenísima para ponérsela a los calditos o comérsela asada con tantita mantequilla y sal."
+      descripcion: "La papa que cultivamos aquí es muy nutritiva y también es buenísima para ponérsela a los calditos o comérsela asada con tantita mantequilla y sal.",
+      nutrientes:[
+        "77 cal",
+        "Proteína: 10%",
+        "Grasa: 1%",
+        "Carbohidratos: 89%",
+      ],
+      vitaminas:["b3","b1","b6"],
+      minerales:[
+        "Potasio",
+        "Magnesio",
+        "Fósforo",
+        "Ácido pantoténico"
+      ]
     },
     {
       nombre: "Maíz",
@@ -74,7 +140,23 @@ export class ProductoPage implements OnInit {
         "./assets/verduras/maiz/maiz4.jpg"
       ],
       audio: "./assets/verduras/maiz/maiz.mp4",
-      descripcion: "El maíz es bien importante para todo mexicano que se respete, lo comemos en las tortillitas, como harina o en la misma mazroca pues, por eso siempre lo cuido con extra de cariño."
+      descripcion: "El maíz es bien importante para todo mexicano que se respete, lo comemos en las tortillitas, como harina o en la misma mazroca pues, por eso siempre lo cuido con extra de cariño.",
+      nutrientes:[
+        "86 cal",
+        "Proteína: 13%",
+        "Grasa: 11%",
+        "Carbohidratos: 76%",
+      ],
+      vitaminas:["a","b1","b2","E","C"],
+      minerales:[
+        "Potasio",
+        "Sodio",
+        "Fósforo",
+        "Zinc",
+        "Calcio",
+        "Hierro",
+        "Magnesio"
+      ]
     }
   ];
 
